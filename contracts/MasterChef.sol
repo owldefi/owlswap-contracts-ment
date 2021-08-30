@@ -60,9 +60,9 @@ contract MasterChef is Ownable {
     }
 
     // The CAKE TOKEN!
-    CakeToken public cake;
+    OwlToken public cake;
     // The SYRUP TOKEN!
-    SyrupBar public syrup;
+    OwlBar public syrup;
     // Dev address.
     address public devaddr;
     // CAKE tokens created per block.
@@ -86,8 +86,8 @@ contract MasterChef is Ownable {
     event EmergencyWithdraw(address indexed user, uint256 indexed pid, uint256 amount);
 
     constructor(
-        CakeToken _cake,
-        SyrupBar _syrup,
+        OwlToken _cake,
+        OwlBar _syrup,
         address _devaddr,
         uint256 _cakePerBlock,
         uint256 _startBlock
